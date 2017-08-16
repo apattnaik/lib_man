@@ -1,0 +1,9 @@
+
+<ul>
+	
+
+	<h3> BOOKS : </h3>
+	{% for Bk in all_books %}
+	<li> <a href="/books/{{  Bk.id }}/"> {{Bk.name}} </a></li>
+	{% endfor %}
+</ul>
