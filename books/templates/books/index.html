@@ -1,9 +1,20 @@
 
 <ul>
-	
 
 	<h3> BOOKS : </h3>
 	{% for Bk in all_books %}
 	<li> <a href="/books/{{  Bk.id }}/"> {{Bk.name}} </a></li>
 	{% endfor %}
+		<br>
+		<br>
+		<br>
+	<form method="get" action="./register/add/">
+    <button type="submit">ADD A BOOK</button>
+	</form>
+
+	<form method="get" action="/librarian/logout/">
+    <button type="submit">Log Out</button>
+	</form>
+
+
 </ul>

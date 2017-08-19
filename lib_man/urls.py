@@ -20,6 +20,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^books/', include('books.urls')),
     url(r'^librarian/', include('librarian.urls')),
-    url(r'^lib_login/', include('lib_login.urls')),
 
 ]
